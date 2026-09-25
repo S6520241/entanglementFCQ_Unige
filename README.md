@@ -15,6 +15,8 @@ La prova si divide in due punti che richiedono la preparazione e la misurazione 
 
 ## Risultati e Discussione
 Le simulazioni hanno fornito risultati perfettamente in linea con i principi previsti. 
+<img width="883" height="237" alt="image" src="https://github.com/user-attachments/assets/cecb8ad8-55dd-4a7b-8580-b303914a1b9b" />
+
 
 ### Analisi delle Correlazioni
 I risultati confermano le aspettative teoriche:
