@@ -49,3 +49,58 @@ python entanglementFCQ.py
 Francesco Giuseppino (Matricola: 6520241)
 
 Corso di Laurea in Informatica – Università degli Studi di Genova
+
+
+______________________________________________________________
+
+
+
+# entanglementFCQ_Unige
+## Quantum Entanglement Analysis in 2-Qubit Systems
+
+Project developed for the **Fundamentals of Quantum Computing** exam at the University of Genoa.
+
+## 📋 Project Overview
+This repository contains the implementation and experimental analysis of 2-qubit quantum circuits, focusing on the study of **entanglement** and non-classical correlations. 
+The main objective is to simulate and compare the behavior of factorizable (separable) quantum states versus strongly correlated states (Bell states), highlighting the fundamental differences described by quantum mechanics.
+
+---
+
+## 🔬 Architecture and Case Studies
+The simulation framework (built using **Python** and **Qiskit**) addresses three main scenarios:
+
+1. **Factorizable (Separable) States:**
+   * Configuration of the first qubit in the state $|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$ with amplitudes $|\alpha|^2 = 0.4$ and $|\beta|^2 = 0.6$ via an $R_y$ rotation.
+   * Preparation of the second qubit in the negative superposition state $|-\rangle$.
+   * The overall state can be described as the tensor product of the individual subsystems.
+
+2. **Bell State $|\Phi^{+}\rangle$:**
+   * Generation of the maximally entangled state $\frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$.
+   * Use of a Hadamard gate on the first qubit followed by a CNOT controlled logic gate.
+
+3. **Bell State $|\Psi^{-}\rangle$:**
+   * Implementation of the antisymmetric singlet state $\frac{1}{\sqrt{2}}(|01\rangle - |10\rangle)$ through the combined application of Pauli-$X$, Hadamard, and CNOT gates.
+
+---
+
+## 📊 Results and Correlation Analysis
+Simulations executed via the aer simulator confirm the theoretical principles of quantum computing:
+* **Absence of correlation in separable systems:** Measurement performed on the first qubit returns the eigenvalue with probability $|\alpha|^2$ completely independently of the state of the second subsystem.
+* **Strong correlations/anticorrelations in Bell states:** Measurement performed on one qubit deterministically constrains the outcome of the other (e.g., collapse into $|00\rangle$ or $|11\rangle$), demonstrating the unique properties of quantum entanglement.
+
+---
+
+## ⚙️ Requirements and Usage
+To run the simulations locally, you need Python and the required Qiskit libraries installed:
+
+```bash
+pip install qiskit qiskit-aer numpy
+```
+To run the simulation script and extract statistical counts:
+```bash
+python entanglementFCQ.py
+```
+
+## Author
+Francesco Giuseppino (Student ID: 6520241)
+Bachelor’s Degree in Computer Science – University of Genoa
